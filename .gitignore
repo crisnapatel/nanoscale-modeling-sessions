@@ -10,3 +10,5 @@ __pycache__/
 *.xtc
 *.trr
 *.edr
+*.trj
+log.lammps

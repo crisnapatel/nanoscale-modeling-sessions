@@ -9,8 +9,9 @@ The series starts with the Linux command line and then moves into molecular dyna
 | Session | Topic | Materials | Video |
 | --- | --- | --- | --- |
 | 01 | Linux command-line basics | [Open session](sessions/01-basic-cli/) | Link will be added after publication |
+| 02 | Modeling mindset, Brownian motion, and first Argon LAMMPS run | [Open session](sessions/02-modeling-mindset-and-argon/) | Link will be added after publication |
 
-Planned next session: a small Argon simulation using the Lennard-Jones potential in LAMMPS.
+Planned next step: continue the Argon example by looking more carefully at the Lennard-Jones model, pair coefficients, energy, temperature, and trajectory interpretation.
 
 ## Using the material
 
