@@ -1,0 +1,18 @@
+units real
+dimension 3
+boundary f f f
+
+atom_style molecular
+read_data two_atom_bond.data
+
+bond_style harmonic
+bond_coeff 1 50.0 1.2
+
+thermo 10
+thermo_style custom step time temp ke pe etotal
+
+dump trajectory all custom 10 harmonic_bond.lammpstrj id type x y z vx vy vz fx fy fz
+
+fix integrator all nve
+
+run 500
