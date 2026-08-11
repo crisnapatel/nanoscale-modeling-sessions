@@ -1,0 +1,18 @@
+units real
+dimension 3
+boundary f f f
+
+atom_style molecular
+read_data morse_bond.data
+
+bond_style morse
+bond_coeff 1 20.0 2.0 1.2
+
+thermo 10
+thermo_style custom step time temp ke pe ebond etotal
+
+dump trajectory all custom 10 morse_bond.lammpstrj id type x y z vx vy vz fx fy fz
+
+fix integrator all nve
+
+run 500
