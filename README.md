@@ -10,8 +10,10 @@ The series starts with the Linux command line and then moves into molecular dyna
 | --- | --- | --- | --- |
 | 01 | Linux command-line basics | [Open session](sessions/01-basic-cli/) | Link will be added after publication |
 | 02 | Modeling mindset, Brownian motion, and first Argon LAMMPS run | [Open session](sessions/02-modeling-mindset-and-argon/) | Link will be added after publication |
+| 03 | Modeling a harmonic bond in LAMMPS | [Open session](sessions/03-harmonic-bond-lammps/) | Link will be added after publication |
+| 04 | Morse bonds and a water-like molecule | [Open session](sessions/04-morse-bonds-water-angle/) | Link will be added after publication |
 
-Planned next step: continue the Argon example by looking more carefully at the Lennard-Jones model, pair coefficients, energy, temperature, and trajectory interpretation.
+Planned next step: build a periodic box of bulk SPC/E water and calculate properties such as density, RDF, and MSD.
 
 ## Using the material
 
