@@ -19,7 +19,7 @@ Planned next step: build a periodic box of bulk SPC/E water and calculate proper
 
 Open the directory for a session and follow its README. Markdown notes can be read directly on GitHub, and a PDF copy is included when useful for offline reading.
 
-Simulation sessions will include source inputs and small reference outputs. Large trajectories, restart files, and other generated data will not be stored in the repository unless they are needed to reproduce a specific result.
+Simulation sessions will include source inputs and small reference outputs.
 
 ## License
 
