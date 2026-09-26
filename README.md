@@ -1,6 +1,6 @@
 # Nanoscale Modeling Sessions
 
-Companion notes, exercises, and simulation files for the practical sessions published on the **Nanoscale Modeling** YouTube channel.
+Companion notes, exercises, and simulation files for the practical sessions published on the **Nanoscale Modeling** YouTube channel. You can watch the complete series in the [Nanoscale Modeling playlist](https://www.youtube.com/playlist?list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi).
 
 The series starts with the Linux command line and then moves into molecular dynamics with LAMMPS. Each session directory contains the files needed to follow the corresponding video without relying on a prepared software interface.
 
@@ -8,10 +8,10 @@ The series starts with the Linux command line and then moves into molecular dyna
 
 | Session | Topic | Materials | Video |
 | --- | --- | --- | --- |
-| 01 | Linux command-line basics | [Open session](sessions/01-basic-cli/) | Link will be added after publication |
-| 02 | Modeling mindset, Brownian motion, and first Argon LAMMPS run | [Open session](sessions/02-modeling-mindset-and-argon/) | Link will be added after publication |
-| 03 | Modeling a harmonic bond in LAMMPS | [Open session](sessions/03-harmonic-bond-lammps/) | Link will be added after publication |
-| 04 | Morse bonds and a water-like molecule | [Open session](sessions/04-morse-bonds-water-angle/) | Link will be added after publication |
+| 01 | Linux command-line basics | [Open session](sessions/01-basic-cli/) | [Watch on YouTube](https://www.youtube.com/watch?v=RDqZj-DnAfI&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
+| 02 | Modeling mindset, Brownian motion, and first Argon LAMMPS run | [Open session](sessions/02-modeling-mindset-and-argon/) | [Watch on YouTube](https://www.youtube.com/watch?v=KTnfby1iwxw&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
+| 03 | Modeling a harmonic bond in LAMMPS | [Open session](sessions/03-harmonic-bond-lammps/) | [Watch on YouTube](https://www.youtube.com/watch?v=vEGduPf0NF8&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
+| 04 | Morse bonds and a water-like molecule | [Open session](sessions/04-morse-bonds-water-angle/) | Not yet published |
 
 Planned next step: build a periodic box of bulk SPC/E water and calculate properties such as density, RDF, and MSD.
 

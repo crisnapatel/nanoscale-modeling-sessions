@@ -4,6 +4,10 @@ This session introduces bonded interactions through the smallest useful system: 
 
 We first discuss what a force field means and compare the shape of harmonic and Morse bond potentials. We then build a molecular LAMMPS data file by hand, run the two-atom system in the NVE ensemble, and inspect its motion and forces in OVITO.
 
+## Video
+
+[Watch Session 3 on YouTube](https://www.youtube.com/watch?v=vEGduPf0NF8&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi), or open the [full Nanoscale Modeling playlist](https://www.youtube.com/playlist?list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi).
+
 ## Files
 
 - `two_atom_bond.data` contains the atoms, masses, simulation box, and bond connectivity.

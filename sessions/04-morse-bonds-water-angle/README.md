@@ -4,6 +4,10 @@ This session continues from the two-atom harmonic bond example. We first replace
 
 The examples are deliberately small. Their purpose is to make molecular topology, bond styles, angle styles, trajectory output, and common LAMMPS errors easier to understand. The parameters are illustrative and do not define a chemically accurate water model.
 
+## Video
+
+This session has not yet been published. The other sessions are available in the [Nanoscale Modeling playlist](https://www.youtube.com/playlist?list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi).
+
 ## Files
 
 - `morse_bond.data` defines two atoms connected by one bond.
