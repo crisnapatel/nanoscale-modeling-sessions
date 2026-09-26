@@ -6,7 +6,7 @@ The examples are deliberately small. Their purpose is to make molecular topology
 
 ## Video
 
-This session has not yet been published. The other sessions are available in the [Nanoscale Modeling playlist](https://www.youtube.com/playlist?list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi).
+[Watch Session 4 on YouTube](https://www.youtube.com/watch?v=FI7bivg7xMg), or open the [full Nanoscale Modeling playlist](https://www.youtube.com/playlist?list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi).
 
 ## Files
 

@@ -11,7 +11,7 @@ The series starts with the Linux command line and then moves into molecular dyna
 | 01 | Linux command-line basics | [Open session](sessions/01-basic-cli/) | [Watch on YouTube](https://www.youtube.com/watch?v=RDqZj-DnAfI&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
 | 02 | Modeling mindset, Brownian motion, and first Argon LAMMPS run | [Open session](sessions/02-modeling-mindset-and-argon/) | [Watch on YouTube](https://www.youtube.com/watch?v=KTnfby1iwxw&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
 | 03 | Modeling a harmonic bond in LAMMPS | [Open session](sessions/03-harmonic-bond-lammps/) | [Watch on YouTube](https://www.youtube.com/watch?v=vEGduPf0NF8&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
-| 04 | Morse bonds and a water-like molecule | [Open session](sessions/04-morse-bonds-water-angle/) | Not yet published |
+| 04 | Morse bonds and a water-like molecule | [Open session](sessions/04-morse-bonds-water-angle/) | [Watch on YouTube](https://www.youtube.com/watch?v=FI7bivg7xMg) |
 
 Planned next step: build a periodic box of bulk SPC/E water and calculate properties such as density, RDF, and MSD.
 
