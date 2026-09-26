@@ -4,6 +4,10 @@ This session introduces the command-line operations we will use throughout the m
 
 The recorded discussion is mostly in English, with some Hindi.
 
+## Video
+
+[Watch Session 1 on YouTube](https://www.youtube.com/watch?v=RDqZj-DnAfI&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi), or open the [full Nanoscale Modeling playlist](https://www.youtube.com/playlist?list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi).
+
 ## Materials
 
 - [Command-line notes in Markdown](01-command-line-basics.md)
@@ -24,10 +28,6 @@ The recorded discussion is mostly in English, with some Hindi.
 ## Practice
 
 The handout contains the same `file1.txt` exercise used during the session. Run it in a separate practice directory so the commands can be repeated without affecting other work.
-
-## Video
-
-The YouTube link will be added here after the video is published.
 
 ## Next session
 

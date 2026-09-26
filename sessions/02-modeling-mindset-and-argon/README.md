@@ -8,6 +8,10 @@ initial condition -> update rule -> trajectory -> visualization
 
 After that, we move to LAMMPS and create a small Argon system using reduced Lennard-Jones units.
 
+## Video
+
+[Watch Session 2 on YouTube](https://www.youtube.com/watch?v=KTnfby1iwxw&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi), or open the [full Nanoscale Modeling playlist](https://www.youtube.com/playlist?list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi).
+
 ## Files
 
 - `brownian/one_particle_brownian_marimo.py`
