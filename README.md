@@ -12,8 +12,9 @@ The series starts with the Linux command line and then moves into molecular dyna
 | 02 | Modeling mindset, Brownian motion, and first Argon LAMMPS run | [Open session](sessions/02-modeling-mindset-and-argon/) | [Watch on YouTube](https://www.youtube.com/watch?v=KTnfby1iwxw&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
 | 03 | Modeling a harmonic bond in LAMMPS | [Open session](sessions/03-harmonic-bond-lammps/) | [Watch on YouTube](https://www.youtube.com/watch?v=vEGduPf0NF8&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
 | 04 | Morse bonds and a water-like molecule | [Open session](sessions/04-morse-bonds-water-angle/) | [Watch on YouTube](https://www.youtube.com/watch?v=FI7bivg7xMg) |
+| 05 | Preparing and packing PFAS molecules, with water setup to follow | [Open session](sessions/05-pfas-water-modeling/) | [Watch Part 1](https://www.youtube.com/watch?v=bHsO5o7V8vA) |
 
-Planned next step: build a periodic box of bulk SPC/E water and calculate properties such as density, RDF, and MSD.
+Session 5 is split into parts. The current files cover molecule preparation and packing. Adding water and running molecular dynamics will follow.
 
 ## Using the material
 

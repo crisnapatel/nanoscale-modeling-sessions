@@ -1,0 +1,25 @@
+units real
+dimension 3
+boundary p p p
+
+atom_style full
+
+region simulation_box block -20.0 20 -20.0 20.00 -20.0 20.0
+create_box 33 simulation_box bond/types 32 angle/types 61 dihedral/types 84 improper/types 0 extra/bond/per/atom 4 extra/angle/per/atom 12 extra/dihedral/per/atom 24 extra/special/per/atom  16
+
+molecule ftoh_mol FTOH.mol
+create_atoms 0 random 5 74647 simulation_box mol ftoh_mol 384774 overlap 3.0
+
+include mass/FTOH.mass
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+improper_style cvff
+
+include coeffs/FTOH.bond_coeffs
+include coeffs/FTOH.angle_coeffs
+include coeffs/FTOH.dihedral_coeffs
+
+
+write_data tmp.data
+
