@@ -1,0 +1,17 @@
+# Reconstructed end-of-Part-1 checkpoint from the saved session snapshot.
+# The masses below are the illustrative values used during the lesson.
+units real
+dimension 3
+boundary p p p
+
+atom_style full
+
+region simulation_box block -20.0 20 -20.0 20.00 -20.0 20.0
+create_box 3 simulation_box bond/types 2 angle/types 1 extra/bond/per/atom 2 extra/angle/per/atom 1 extra/special/per/atom 2
+
+molecule water_mol water.mol
+mass 1 4
+mass 2 34
+mass 3 14
+
+write_data water.tmp
