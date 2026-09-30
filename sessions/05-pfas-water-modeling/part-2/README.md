@@ -2,7 +2,7 @@
 
 [Watch Part 2 on YouTube](https://youtu.be/qzkvSmXXiFM) · [Session 5 overview](../)
 
-We continue from [Part 1](../part-1/), insert five molecule copies, inspect them in OVITO, and load masses and bonded coefficients from the LigParGen data. `FTOH.data` and `FTOH.mol` are repeated here so this input runs from its own directory.
+We pick up from [Part 1](../part-1/). Here we put five copies of the molecule into the box, look at them in OVITO, and add the masses and bonded coefficients. I've included `FTOH.data` and `FTOH.mol` again so you can run this part from its own folder.
 
 | File | What it contains |
 | --- | --- |
@@ -12,8 +12,8 @@ We continue from [Part 1](../part-1/), insert five molecule copies, inspect them
 | `mass/FTOH.mass` | Extracted mass commands |
 | `coeffs/FTOH.*_coeffs` | Bond, angle, and dihedral coefficient commands |
 
-From this directory, run `lmp -in pack.lmp` with a LAMMPS build that has the interaction styles in the input. It creates five copies of the 33-atom template, checks for overlaps at a 3 Å distance, and writes `tmp.data`. Open that file in OVITO with atom style `full`. Unwrap periodic images if a molecule appears split across a box boundary.
+From this folder, run `lmp -in pack.lmp`. Your LAMMPS build needs the interaction styles used in the input. The script puts five copies of the 33-atom molecule in the box, rejects placements where atoms are within 3 Å of each other, and writes `tmp.data`. You can open that file in OVITO with atom style `full`. If a molecule looks split across the box edge, unwrap the periodic images.
 
-The first number in `create_box` is the number of atom types, not the number of atoms to insert. Each atom in this LigParGen output happens to have its own type, so both numbers are 33. Five copies produce 165 atoms but still only 33 atom types.
+The first number in `create_box` means **atom types**, not atoms. In this LigParGen output, each atom happens to have its own type, so the number is 33. Five copies give us 165 atoms, but still only 33 atom types.
 
-This is where the meeting stopped. Water, pair interactions, electrostatics, equilibration, and molecular dynamics have not been added. The original SMILES export has a disconnected fluorine fragment, so verify that the 33-atom structure represents the intended FTOH molecule before using it for research.
+This is where we stopped. There is no water in the box yet, and we haven't added pair interactions or run MD. The original SMILES file has a separate `.F` fragment. Check that the 33-atom structure is the FTOH molecule you want before using it for research.

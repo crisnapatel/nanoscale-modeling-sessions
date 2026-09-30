@@ -14,7 +14,7 @@ The series starts with the Linux command line and then moves into molecular dyna
 | 04 | Morse bonds and a water-like molecule | [Open session](sessions/04-morse-bonds-water-angle/) | [Watch on YouTube](https://www.youtube.com/watch?v=FI7bivg7xMg) |
 | 05 | Preparing and packing PFAS molecules, with water setup to follow | [Part 1](sessions/05-pfas-water-modeling/part-1/) · [Part 2](sessions/05-pfas-water-modeling/part-2/) | [Watch Part 1](https://youtu.be/bHsO5o7V8vA) · [Watch Part 2](https://youtu.be/qzkvSmXXiFM) |
 
-Session 5 is split into [two parts](sessions/05-pfas-water-modeling/). The current files cover molecule preparation and packing. Adding water and running molecular dynamics will follow.
+We did [Session 5 in two parts](sessions/05-pfas-water-modeling/). So far we've prepared the molecules and put five copies in a box. We haven't added water or run MD yet.
 
 ## Using the material
 

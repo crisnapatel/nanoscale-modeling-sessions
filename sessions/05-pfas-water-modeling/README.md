@@ -1,6 +1,6 @@
 # Session 5. Preparing and packing PFAS molecules in LAMMPS
 
-We split this session across two meetings. Start with Part 1 for the molecule files and template conversion, then continue with Part 2 for packing molecules and loading their masses and bonded coefficients.
+We did Session 5 over two meetings. Part 1 covers the molecule files and the conversion to LAMMPS templates. In Part 2, we put five copies of the molecule in a box and add the masses and bonded coefficients.
 
 | Part | What we did | Files | Video |
 | --- | --- | --- | --- |
@@ -9,4 +9,4 @@ We split this session across two meetings. Start with Part 1 for the molecule fi
 
 The discussion is mostly in English, with some Hindi.
 
-We have not yet added water to the box or run molecular dynamics. The original SMILES export contains a disconnected fluorine fragment, so the 33-atom parameterised structure should be checked against the intended FTOH structure before using it for research. The LigParGen water file used in Part 1 is not an SPC/E model.
+We haven't added water to the box or run molecular dynamics yet. Also, the original SMILES export has a separate `.F` fragment. Please check that the 33-atom structure is the FTOH molecule you want before using these parameters for research. The water file from LigParGen is not an SPC/E model.

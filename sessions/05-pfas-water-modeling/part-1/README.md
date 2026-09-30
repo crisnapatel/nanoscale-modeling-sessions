@@ -2,7 +2,7 @@
 
 [Watch Part 1 on YouTube](https://youtu.be/bHsO5o7V8vA) · [Session 5 overview](../)
 
-We draw a molecule in Avogadro, export it, get LigParGen data files, and convert those files to LAMMPS molecule templates. The final `pack-part1.lmp` is the unfinished input from this meeting, reconstructed from the saved session snapshot.
+In this part we draw the molecule in Avogadro, send it to LigParGen, and turn the LAMMPS data files into molecule templates. There wasn't a saved input file at the end of Part 1, so `pack-part1.lmp` contains the commands we had reached by then.
 
 | File | What it contains |
 | --- | --- |
@@ -11,7 +11,7 @@ We draw a molecule in Avogadro, export it, get LigParGen data files, and convert
 | `FTOH.data`, `water.data` | Single-molecule data files downloaded from LigParGen |
 | `FTOH.mol`, `water.mol` | Molecule templates made during the lesson |
 | `lammps_data_to_mol.py` | Converter used during the lesson |
-| `pack-part1.lmp` | End-of-Part-1 checkpoint |
+| `pack-part1.lmp` | The commands we had reached by the end of Part 1 |
 
 To check the conversion from this directory:
 
@@ -22,8 +22,8 @@ diff -u water.mol water-check.mol
 diff -u FTOH.mol FTOH-check.mol
 ```
 
-The converter copies coordinates, atom types, charges, and bonded topology. It centres the coordinates and reports the maximum number of interactions involving an atom and the special neighbours within three bonds. These are conservative structural counts to help choose storage sizes, not guaranteed minimum values for every LAMMPS configuration. Masses and force-field coefficients remain in the data files, not in the templates.
+The converter copies coordinates, atom types, charges, and bonded connections, including impropers if there are any. It centres the coordinates and prints the largest number of bonded interactions and special neighbours around an atom. These counts help us choose the extra storage in LAMMPS, but they aren't necessarily the smallest values that will work. The masses and coefficients stay in the data files. They aren't copied into the molecule templates.
 
-Run the checkpoint with `lmp -in pack-part1.lmp`. It writes `water.tmp`, an empty box. Loading a molecule template registers it but does not insert atoms. The arbitrary masses in this checkpoint were used to get past a missing-mass error during the lesson.
+Run `lmp -in pack-part1.lmp` from this folder. It writes `water.tmp`, but the box is still empty. The `molecule` command loads a template; it doesn't put any atoms in the box. We used placeholder masses here to get past the missing-mass error.
 
-The LigParGen `water.data` file includes its own angle coefficient and is not the SPC/E model discussed earlier in the series. Also check the FTOH structure against the intended molecule before using these parameters for research.
+The LigParGen `water.data` file has its own angle coefficient. It is not the SPC/E water model we discussed earlier. The original `FTOH.smi` file also has a separate `.F` fragment, so check the FTOH structure before using these parameters for research.
