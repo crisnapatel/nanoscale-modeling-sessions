@@ -1,0 +1,110 @@
+LAMMPS (22 Jul 2025 - Update 4)
+  using 1 OpenMP thread(s) per MPI task
+units real
+dimension 3
+boundary p p p
+
+atom_style full
+
+pair_style lj/cut 10.0
+pair_modify mix geometric
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+improper_style cvff
+
+read_data polymer-water.data
+Reading data file ...
+  orthogonal box = (-20 -20 -20) to (20 20 20)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  3747 atoms
+  reading velocities ...
+  3747 velocities
+  scanning bonds ...
+  1 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  12 = max dihedrals/atom
+  orthogonal box = (-20 -20 -20) to (20 20 20)
+  1 by 1 by 1 MPI processor grid
+  reading bonds ...
+  2548 bonds
+  reading angles ...
+  1499 angles
+  reading dihedrals ...
+  420 dihedrals
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0
+  special bond factors coul:  0        0        0
+     4 = max # of 1-2 neighbors
+     6 = max # of 1-3 neighbors
+    12 = max # of 1-4 neighbors
+    16 = max # of special neighbors
+  special bonds CPU = 0.001 seconds
+  read_data CPU = 0.016 seconds
+
+
+dump em_trj all custom 5 em.trj id mol type x y z vx vy vz fx fy fz
+
+min_style cg
+minimize 0.0 1.0e-8 1000 100000
+Generated 630 of 630 mixed pair_coeff terms from geometric mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 12
+  ghost atom cutoff = 12
+  binsize = 6, bins = 7 7 7
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/cut, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Per MPI rank memory allocation (min/avg/max) = 17.29 | 17.29 | 17.29 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press
+         0   0             -207.65858      24577.472      24369.813     -39845.053
+      1000   0             -1061.1301     -92.052089     -1153.1822     -595.67991
+Loop time of 13.7439 on 1 procs for 1000 steps with 3747 atoms
+
+99.7% CPU use with 1 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = max iterations
+  Energy initial, next-to-last, final =
+       24369.813368983   -1153.0406575568  -1153.18215410564
+  Force two-norm initial, final = 4652.8913 13.774916
+  Force max component initial, final = 148.08972 3.5727347
+  Final line search alpha, max atom move = 0.0092529192 0.033058225
+  Iterations, force evaluations = 1000 1995
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 12.68      | 12.68      | 12.68      |   0.0 | 92.26
+Bond    | 0.20707    | 0.20707    | 0.20707    |   0.0 |  1.51
+Neigh   | 0.11583    | 0.11583    | 0.11583    |   0.0 |  0.84
+Comm    | 0.049954   | 0.049954   | 0.049954   |   0.0 |  0.36
+Output  | 0.629      | 0.629      | 0.629      |   0.0 |  4.58
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.06169    |            |       |  0.45
+
+Nlocal:           3747 ave        3747 max        3747 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Nghost:          11627 ave       11627 max       11627 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+Neighs:         784993 ave      784993 max      784993 min
+Histogram: 1 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 784993
+Ave neighs/atom = 209.49907
+Ave special neighs/atom = 2.3843074
+Neighbor list builds = 10
+Dangerous builds = 0
+
+write_data em.data
+System init for write_data ...
+Generated 630 of 630 mixed pair_coeff terms from geometric mixing rule
+Total wall time: 0:00:13

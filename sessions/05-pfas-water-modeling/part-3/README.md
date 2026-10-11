@@ -1,6 +1,6 @@
 # Session 5, Part 3. Adding water and trying energy minimisation
 
-[Session 5 overview](../) · Video to follow
+[Watch Part 3 on YouTube](https://youtu.be/0399MqYNvnw) · [Session 5 overview](../)
 
 We started with the five FTOH-labelled molecules from [Part 2](../part-2/), added water molecules to the same periodic box, and then ran a first energy minimisation. These are the files we used in the meeting. The input and output data files are included so you can inspect the packed and minimised structures without rerunning everything.
 
@@ -8,10 +8,15 @@ We started with the five FTOH-labelled molecules from [Part 2](../part-2/), adde
 | --- | --- |
 | `pack.lmp` | Packs the FTOH-labelled molecules and water into a 40 Å box |
 | `FTOH.mol`, `water.mol` | Molecule templates used by `pack.lmp` |
+| `FTOH.data`, `water.data` | Original LigParGen data files we read to get the masses and coefficients |
 | `mass/`, `coeffs/` | Masses and bonded/Lennard-Jones coefficients loaded by `pack.lmp` |
+| `coeffs/FTOH.pair_coeffs`, `coeffs/FTOH.pair` | Intermediate files from the shell-command exercise; neither is included by `pack.lmp` |
 | `polymer-water.data` | Packed structure used as the starting point for minimisation |
 | `em.lmp` | Reads `polymer-water.data` and runs conjugate-gradient minimisation |
 | `em.data` | Structure written by the minimisation run shown in the meeting |
+| `em.log` | Minimisation log, including the stopping criterion and final forces |
+| [`terminal-commands.md`](terminal-commands.md) | The `grep`, `tail`, and `awk` steps used to prepare the pair coefficients, plus a `sed` check |
+| [`learning-moments.md`](learning-moments.md) | Errors from this meeting: what caused them and what we changed |
 
 From this folder, run `lmp -in pack.lmp`. That writes `tmp.data`; in the meeting I copied it to `polymer-water.data` before running `lmp -in em.lmp`. The included `polymer-water.data` is that starting structure. `em.lmp` writes `em.data` and an `em.trj` dump. The dump is large and is not included here.
 

@@ -6,7 +6,7 @@ We did Session 5 over several meetings. Part 1 covers the molecule files and the
 | --- | --- | --- | --- |
 | 1 | Drew the molecule, used LigParGen, and converted data files to LAMMPS molecule templates | [Part 1 files](part-1/) | [Watch Part 1](https://youtu.be/bHsO5o7V8vA) |
 | 2 | Inserted five FTOH-labelled molecules, checked overlaps, and loaded masses and bonded coefficients | [Part 2 files](part-2/) | [Watch Part 2](https://youtu.be/qzkvSmXXiFM) |
-| 3 | Added water to the box and ran a first energy minimisation | [Part 3 files](part-3/) | Video to follow |
+| 3 | Added water to the box and ran a first energy minimisation | [Part 3 files](part-3/) | [Watch Part 3](https://youtu.be/0399MqYNvnw) |
 
 The discussion is mostly in English, with some Hindi.
 
