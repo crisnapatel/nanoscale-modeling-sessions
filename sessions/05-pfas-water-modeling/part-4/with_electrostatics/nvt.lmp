@@ -1,0 +1,33 @@
+units real
+dimension 3
+boundary p p p
+
+atom_style full
+
+pair_style lj/cut/coul/long 10.0
+kspace_style pppm 1.0e-4
+special_bonds lj/coul 0.0 0.0 0.5
+pair_modify mix geometric
+bond_style harmonic
+angle_style harmonic
+dihedral_style opls
+improper_style cvff
+
+read_data em.data
+
+
+variable atom_fnorm atom sqrt(fx^2+fy^2+fz^2)
+
+dump nvt_trj all custom 5 nvt.trj id mol type x y z vx vy vz fx fy fz v_atom_fnorm
+
+thermo 100
+thermo_style custom step pe ke ecoul evdwl density
+
+timestep 1
+velocity all create 300.0 84754 rot yes mom yes dist gaussian
+fix alok_nvt all nvt temp 300.0 300.0 100.0
+
+run 10000 # 10 ps
+
+
+write_data nvt.data

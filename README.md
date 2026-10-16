@@ -12,9 +12,9 @@ The series starts with the Linux command line and then moves into molecular dyna
 | 02 | Modeling mindset, Brownian motion, and first Argon LAMMPS run | [Open session](sessions/02-modeling-mindset-and-argon/) | [Watch on YouTube](https://www.youtube.com/watch?v=KTnfby1iwxw&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
 | 03 | Modeling a harmonic bond in LAMMPS | [Open session](sessions/03-harmonic-bond-lammps/) | [Watch on YouTube](https://www.youtube.com/watch?v=vEGduPf0NF8&list=PLxvbTrJqiiJu_a_j9wmM4NOX0Nvc-erVi) |
 | 04 | Morse bonds and a water-like molecule | [Open session](sessions/04-morse-bonds-water-angle/) | [Watch on YouTube](https://www.youtube.com/watch?v=FI7bivg7xMg) |
-| 05 | Preparing and packing PFAS molecules, with water setup to follow | [Part 1](sessions/05-pfas-water-modeling/part-1/) · [Part 2](sessions/05-pfas-water-modeling/part-2/) | [Watch Part 1](https://youtu.be/bHsO5o7V8vA) · [Watch Part 2](https://youtu.be/qzkvSmXXiFM) |
+| 05 | PFAS-water setup, minimisation, electrostatics, and first NVT dynamics | [Part 1](sessions/05-pfas-water-modeling/part-1/) · [Part 2](sessions/05-pfas-water-modeling/part-2/) · [Part 3](sessions/05-pfas-water-modeling/part-3/) · [Part 4](sessions/05-pfas-water-modeling/part-4/) | [Watch Part 1](https://youtu.be/bHsO5o7V8vA) · [Watch Part 2](https://youtu.be/qzkvSmXXiFM) · [Watch Part 3](https://youtu.be/0399MqYNvnw) · [Watch Part 4](https://youtu.be/DHhFY6wWZBI) |
 
-We did [Session 5 in two parts](sessions/05-pfas-water-modeling/). So far we've prepared the molecules and put five copies in a box. We haven't added water or run MD yet.
+[Session 5 spans several meetings](sessions/05-pfas-water-modeling/). We have prepared and packed the molecules, added water, worked through minimisation, and started charged NVT dynamics. NPT equilibration and MSD analysis are next.
 
 ## Using the material
 
